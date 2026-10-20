@@ -7,11 +7,13 @@ Original file is located at
     https://colab.research.google.com/drive/1Hvz-BdxcovTAv4DJdg8gYLCZmCaXoIaS
 """
 
-import pandas as pd
 import streamlit as st
+import pandas as pd
 import plotly.express as px
 
-st.set_page_config(page_title='Dash', layout='wide')
+st.set_page_config(
+    page_title="DashCovid",
+    layout="wide")
 
 df = pd.read_csv('dados_vacina_projeto.csv')
 
