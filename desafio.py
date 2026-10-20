@@ -8,8 +8,8 @@ Original file is located at
 """
 
 import pandas as pd
-import plotly.express as px
 import streamlit as st
+import plotly.express as px
 
 st.set_page_config(page_title='Dash', layout='wide')
 
