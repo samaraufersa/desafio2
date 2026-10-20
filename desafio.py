@@ -7,15 +7,13 @@ Original file is located at
     https://colab.research.google.com/drive/1Hvz-BdxcovTAv4DJdg8gYLCZmCaXoIaS
 """
 
-!pip install streamlit
-
 import pandas as pd
 import plotly.express as px
 import streamlit as st
 
 st.set_page_config(page_title='Dash', layout='wide')
 
-df = pd.read_csv('/content/dados_vacina_projeto.csv')
+df = pd.read_csv('dados_vacina_projeto.csv')
 
 df.head()
 
