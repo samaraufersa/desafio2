@@ -33,5 +33,6 @@ Crie um gráfico de histograma, que mostra o quantitativo de vacinações diári
 
 """
 
-px.line(df, x = 'date', y='total_vaccinations', color='location')
+fig1 = px.line(df, x = 'date', y='total_vaccinations', color='location')
 
+st.plotly_chart(fig1, use_container_width=True)
