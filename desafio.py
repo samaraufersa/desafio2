@@ -17,23 +17,7 @@ st.set_page_config(
 
 df = pd.read_csv('dados_vacina_projeto.csv')
 
-df.head()
-
-df.info()
-
 df['date'] = pd.to_datetime(df['date'])
-
-df.info()
-
-df['location'].unique()
-
-"""Crie um primeiro gráfico de linha, que visualize o Total de Vacinações por Data e Países - gráfico de série (use: total_vaccinations).
-
-Crie um gráfico de pizza ou torta, que mostre as Pessoas Totalmente Vacinadas (people_fully_vaccinated) do Brasil, Índia e USA (dica: faça um filtro com ('location == "BRASIL" or location == "INDIA" or location == "UNITED STATES"').
-
-Crie um gráfico de histograma, que mostra o quantitativo de vacinações diárias (daily_vaccinations) na ASIA e na CHINA.  (dica: faça um filtro com ('location == "ASIA" or location == "CHINA"').
-
-"""
 
 fig1 = px.line(df, x = 'date', y='total_vaccinations', color='location')
 
